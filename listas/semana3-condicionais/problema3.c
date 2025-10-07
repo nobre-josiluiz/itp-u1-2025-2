@@ -15,15 +15,14 @@
 int main() {
   float nota1, nota2, nota3, media, notaFinal;
   
-  printf("Digite as três notas do aluno: ");
+  printf("Digite as tres notas do aluno: ");
   scanf("%f , %f , %f", &nota1, &nota2, &nota3);
 
   printf("\n");
 
   // Validação dos valores de entrada
   if (nota1 < 0 || nota2 < 0 || nota3 < 0) {
-    printf("Valores inválidos. As notas devem ser não negativa
-    s.\n");
+    printf("Valores invalidos. As notas devem ser nao negativas.\n");
     return 1;
   }
   
@@ -32,11 +31,11 @@ int main() {
 
   // Determinar a situação do aluno 
   if (media >= 7.0) {
-    printf("O aluno foi aprovado com média %.2f.\n", media);
+    printf("O aluno foi aprovado com media %.2f.\n", media);
   } else if (media < 4.0) {
-    printf("O aluno foi reprovado com média %.2f.\n", media);
+    printf("O aluno foi reprovado com media %.2f.\n", media);
   } else if (media >= 4.0 && media < 7.0) {
-    printf("O aluno está em recuperação com média %.2f.\n", media);
+    printf("O aluno esta em recuperacao com media %.2f.\n", media);
     notaFinal = (5.0 * 2) - media;
           
     printf("O aluno precisa tirar %.2f na prova final para ser aprovado.\n", notaFinal);
