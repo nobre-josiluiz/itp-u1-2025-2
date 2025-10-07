@@ -44,7 +44,7 @@ int main() {
     valorTotal = consumo * 1.29 + 15;
   }
   printf("\n");
-  printf("O valor total da conta é: R$ %.2f\n", valorTotal);
+  printf("O valor total da conta eh: R$ %.2f\n", valorTotal);
 
   return 0;
 }
