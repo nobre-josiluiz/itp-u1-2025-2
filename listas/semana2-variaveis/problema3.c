@@ -32,7 +32,7 @@ int main() {
   // Cálculo do montante
   montante = capital * pow((1 + taxa/100),tempo);
   printf(" \n");
-  printf("O montante final é: R$ %.2f\n", montante);
+  printf("O montante final eh: R$ %.2f\n", montante);
   
 
 

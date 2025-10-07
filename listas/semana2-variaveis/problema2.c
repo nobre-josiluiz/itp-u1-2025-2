@@ -17,8 +17,8 @@ int main() {
   fahrenheit = (celsius * 9/5) + 32;
   kelvin = celsius + 273.15; 
 
-  printf("A temperatura em Fahrenheit é igual a %.1f °F\n", fahrenheit);
-  printf("A temperatura em Kelvin é igual a %.1f °K\n", kelvin);
+  printf("A temperatura em Fahrenheit eh igual a %.1f F\n", fahrenheit);
+  printf("A temperatura em Kelvin eh igual a %.1f K\n", kelvin);
 
   return 0;
 }

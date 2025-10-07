@@ -18,28 +18,28 @@ int main() {
   float div; // Variável para armazenar a divisão real 
 
   // Entrada de dados
-  printf("Digite um número inteiro: ");
+  printf("Digite um numero inteiro: ");
   scanf("%d", &int1); // Leitura do primeiro número inteiro 
 
-  printf("Digite outro número inteiro: ");
+  printf("Digite outro numero inteiro: ");
   scanf("%d", &int2); // Leitura do segundo número inteiro 
 
   div = (float)int1 / int2;
   
   // Exibiçao dos resultados
   printf(" \n");
-  printf("A soma e a diferença dos números são, respectivamente: %d e %d.\n", int1 + int2, int1 - int2);
-  printf("O produto e a média aritmética dos números são, respectivamente: %d e %.2f.\n", int1 * int2, (float)(int1 + int2) / 2);
+  printf("A soma e a diferenca dos numeros sao, respectivamente: %d e %d.\n", int1 + int2, int1 - int2);
+  printf("O produto e a media aritmetica dos numeros sao, respectivamente: %d e %.2f.\n", int1 * int2, (float)(int1 + int2) / 2);
   //printf("O resto da divisão inteira dos números é: %d.\n",  int1 % int2 );
   
   // Verificação de divisão por zero
   if (int2 == 0) {
-    printf("Não é possível dividir por zero.\n");
+    printf("Nao e possivel dividir por zero.\n");
     return 1;     
   }
-  printf("O resto da divisão inteira dos números é: %d.\n",  int1 % int2 );
+  printf("O resto da divisao inteira dos numeros eh: %d.\n",  int1 % int2 );
   
-  printf("A divisão real dos números é: %.2f .\n", div);
+  printf("A divisao real dos numeros eh: %.2f .\n", div);
   
 
 
