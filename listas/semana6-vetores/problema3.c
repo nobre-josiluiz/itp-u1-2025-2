@@ -1,0 +1,49 @@
+/*
+* Lista de exercícios - semana 6
+* Problema 3 - A construção da ponte
+* Escreva um programa que leia um número n (assuma n ≤ 30) 
+* Em seguida leia n números inteiros (todos maiores que 0) representando a altura do terreno (vide Figuras a seguir).
+* O programa deve escrever na tela o comprimento da ponte que une os dois pontos mais altos. Assuma que há
+sempre duas, e somente duas, ocorrências do ponto mais alto e que o comprimento da ponte é no mínimo 1.
+
+
+*/
+
+#include <stdio.h>
+
+/*int MaiorValor(int vetor[], int n) {
+  int maior = vetor[0];
+  for (int i = 0; i < n; i++) {
+    if (vetor[i] > maior) {
+      maior = vetor[i];
+    }
+  }
+  return maior;
+} */
+
+int main() {
+  int n, i, j;
+  int alturas[30];
+
+  printf("Digite a quantidade: ");
+  scanf(" %d", &n);
+
+  for (int i = 0; i < n; i++) {
+    printf("Digite a altura %d : ", i);
+    scanf(" %d", &alturas[i]);
+  }
+
+  for (int i = 0; i < n; i++) {
+    for (int j = i; i <= j; j++) {
+      if (alturas[i] == alturas[j]) {
+      //if (MaiorValor(alturas[i], n) == MaiorValor(alturas[j], n)) {
+        if (j - i > 1) {
+          printf(" %d", j - i);
+        }
+      }
+    }  
+  }
+  
+  
+  return 0;
+}
