@@ -26,10 +26,10 @@ int main() {
     int n, i; // n-quantidade de alvos
     
     //Inserindo os valores de entrada.
-    printf("Digite a posição inicial do homem aranha (x, y): ");
+    printf("Digite a posicao inicial do homem aranha separados por espaco (x, y): ");
     scanf(" %f %f", &x, &y);
     
-    printf("Digite o comprimento máximo da teia: ");
+    printf("Digite o comprimento maximo da teia: ");
     scanf(" %f", &comprimento_teia);
     
     // Validando valores de entrada 
@@ -43,7 +43,7 @@ int main() {
     
     //Laço de alvos
     for (int i = 1; i <= n; i++) {
-        printf("Digite o próximo alvo (x, y): ");
+        printf("Digite o proximo alvo (x, y): ");
         scanf(" %f %f", &a_x, &a_y);
         dist = sqrt(pow((x - a_x),2) + pow((y - a_y),2));
         //printf("\na dist %f ", dist);

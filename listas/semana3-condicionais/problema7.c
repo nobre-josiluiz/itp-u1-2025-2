@@ -22,32 +22,32 @@ Programa que resolve equações do segundo grau (ax² + bx + c = 0). O programa 
 int main() {
     float a, b, c, delta; // coeficientes da equação do 2º e discriminante
     
-    printf("Digite o valor do coeficiente do termo x² da equação do 2º grau (a): ");
+    printf("Digite o valor do coeficiente do primeiro termo da equacao do 2 grau (a): ");
     scanf(" %f", &a);
     if (a == 0) {
-        printf("\nInválido! Nesse caso, não representa uma equação do 2º. Digite um valor diferente de zero.");
+        printf("\nInvalido! Nesse caso, nao representa uma equacao do 2. Digite um valor diferente de zero.");
         return 1;
     }
 
-    printf("Digite o valor do coeficiente do 2º termo x da equação (b): ");
+    printf("Digite o valor do coeficiente do 2 termo x da equacao (b): ");
     scanf(" %f", &b);
 
-    printf("Digite o valor do termo independente da equação (c): ");
+    printf("Digite o valor do termo independente da equacao (c): ");
     scanf(" %f", &c); 
     
-    printf("\n %.1fx² + %.1fx + %.1f = 0", a, b, c);
+    //printf("\n %.1fx² + %.1fx + %.1f = 0", a, b, c);
     // Cálculo das raízes
     
     delta = b*b - 4*a*c;
 
     if (delta >= 0) {
         if (delta == 0) {
-            printf("\nA equação possui uma única raiz: x = %.1f ", (b*(-1))/2*a);
+            printf("\nA equacao possui uma unica raiz: x = %.1f ", (b*(-1))/2*a);
         } else {
-            printf("\nA equação possui duas raízes distintas: x' = %.1f e x'' = %.1f ", ((-b - sqrt(delta))/2*a), ((-b + sqrt(delta))/2*a) );
+            printf("\nA equacao possui duas raizes distintas: x' = %.1f e x'' = %.1f ", ((-b - sqrt(delta))/2*a), ((-b + sqrt(delta))/2*a) );
         }
     } else { 
-        printf("\nA equação não possui raízes reais.");
+        printf("\nA equacao nao possui raizes reais.");
     }
 
     

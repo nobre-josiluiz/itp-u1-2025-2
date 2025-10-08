@@ -18,7 +18,7 @@ int main() {
     int cont = -1;
     
     //Inserindo os valores de entrada.
-    printf("Digite as dimensões da folha no formato (comprimento, largura): ");
+    printf("Digite as dimensoes da folha no formato separados por espaco (comprimento, largura): ");
     scanf(" %f %f", &comprimento, &largura);
     
     printf("Digite a medida do comprimento do bolso: ");
@@ -26,13 +26,13 @@ int main() {
     
     // Validando valores de entrada 
     if (comprimento <= 0 || largura <= 0 || comprimento_bolso <= 0) {
-        printf("\nCuidado! Os valores precisam ser positivos, pois são medidas.");
+        printf("\nCuidado! Os valores precisam ser positivos, pois sao medidas.");
         return 1;
     }
     
     //Caso em que não precisa dobrar
     if (comprimento <= comprimento_bolso || largura <= comprimento_bolso) {
-        printf("\nNão será necessário dobrar, pois pelo menos um dos lado é menor do que o comprimento do bolso.");
+        printf("\nNao sera necessario dobrar, pois pelo menos um dos lado e menor do que o comprimento do bolso.");
         return 1;
     }
     
@@ -46,7 +46,7 @@ int main() {
         cont++;
     }
     
-    printf("\nSerá necessário dobrar %d vez(es) a folha para que caiba no bolso.", cont);
+    printf("\nSera necessario dobrar %d vez(es) a folha para que caiba no bolso.", cont);
     
     
     return 0;

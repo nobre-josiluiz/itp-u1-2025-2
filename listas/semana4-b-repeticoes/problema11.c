@@ -22,7 +22,7 @@ int main() {
     int i, j, k, l, ameaca; // índices
     
     
-    //Verificando cada posição da rainhas
+    //Verificando cada posicao da rainhas
     for (int i = 1; i <= 4 ; i++) {
         for (int j = 1; j <= 4 ; j++) {
             for (int k = 1; k <= 4; k++) {
@@ -48,11 +48,11 @@ int main() {
                     
                     // Se não houver ameaça, obtemos as possbilidades
                     if (!ameaca) {
-                        printf("As possibiilidades são:\n");
-                        printf(" Rainha na linha %d na posição(letra a). \n", i);
-                        printf(" Rainha na linha %d na posição(letra b). \n", j);
-                        printf(" Rainha na linha %d na posição(letra c). \n", k);
-                        printf(" Rainha na linha %d na posição(letra d). \n", l);
+                        printf("As possibiilidades sao:\n");
+                        printf(" Rainha na linha %d na posicao(letra a). \n", i);
+                        printf(" Rainha na linha %d na posicao(letra b). \n", j);
+                        printf(" Rainha na linha %d na posicao(letra c). \n", k);
+                        printf(" Rainha na linha %d na posicao(letra d). \n", l);
                         
                         printf("\n");
                     }

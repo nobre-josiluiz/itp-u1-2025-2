@@ -21,30 +21,30 @@ Programa que lê três valores representando os lados de um triângulo e determi
 int main() {
     float a, b, c, valor_max; // medidas de cada lado do triângulo
     
-    printf("Digite três valores que representam medidas (a, b, c): ");
+    printf("Digite tres valores que representam medidas (a, b, c) separados por espaco: ");
     scanf(" %f %f %f", &a, &b, &c); 
     
     // Validando valores de entrada 
     if (a <= 0 || b <= 0 || c <= 0) {
-        printf("\nCuidado! Os valores das medidas dos lados do triângulo precisam ser positivos.");
+        printf("\nCuidado! Os valores das medidas dos lados do triangulo precisam ser positivos.");
         return 1;
     }
     
     // Validação se forma um triângulo
     if (a + b > c && a + c > b && b + c > a) {
-        printf("\nCom essas medidas obtemos um triângulo: ");
+        printf("\nCom essas medidas obtemos um triangulo: ");
         
     } else {
-        printf("\nCom essas medidas não forma um triângulo.\n");
+        printf("\nCom essas medidas nao forma um triangulo.\n");
         return 1;
     }
     
     // Classificação de triângulo
     if (a == b && b == c && c == a) {
-        printf("equilátero e ");
+        printf("equilatero e ");
         
     } else if (a == b || b == c || a == c) {
-        printf("isósceles e ");
+        printf("isosceles e ");
     } else {
         printf("escaleno e ");
     }
@@ -80,27 +80,27 @@ int main() {
     // Classificando em relação aos ângulos
     if (valor_max == a) {
         if (a*a == b*b + c*c) {
-            printf("retângulo.");
+            printf("retangulo.");
         } else if (a*a < b*b + c*c) {
-            printf("acutângulo.");
+            printf("acutangulo.");
         } else {
-            printf("obtusângulo.");
+            printf("obtusangulo.");
         }
     } else if (valor_max == b) {
         if (b*b == a*a + c*c) {
-            printf("retângulo.");
+            printf("retangulo.");
         } else if (b*b < a*a + c*c) {
-            printf("acutângulo.");
+            printf("acutangulo.");
         } else {
-            printf("obtusângulo.");
+            printf("obtusangulo.");
         }
     } else {
         if (c*c == a*a + b*b) {
-            printf("retângulo.");
+            printf("retangulo.");
         } else if (c*c < a*a + b*b) {
-            printf("acutângulo.");
+            printf("acutangulo.");
         } else {
-            printf("obtusângulo.");
+            printf("obtusangulo.");
         }
     }
 

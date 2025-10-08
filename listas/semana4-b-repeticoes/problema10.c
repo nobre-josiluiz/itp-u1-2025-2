@@ -30,10 +30,10 @@ int main() {
     int i, j, x, y; // índices
     
     //Dados de entrada
-    printf("Digite o preço de venda: ");
+    printf("Digite o preco de venda: ");
     scanf(" %f", &preco_venda);
     
-    printf("Digite o preço de produção: ");
+    printf("Digite o preco de producao: ");
     scanf(" %f", &preco_producao);
     
     
@@ -48,23 +48,17 @@ int main() {
         for (int j = 1; j < i; j++) {
             lucro = preco_venda*j - preco_producao*i;
             razao = ((float)i)/j;
-            if(lucro > 0 && razao > 1 && aux < razao) {    
-                //printf("Prejuízo");
-                //return 1;   
-            //} else if(razao > 1) {
-                aux = razao;
-                //printf("A melhor promoção é: leve %d e pague %d.\n", i, j);
+            if(lucro > 0 && razao > 1 && aux < razao) {                    
+                aux = razao;                
                 x = i;
-                y = j;
-                //printf(" %f, \n", aux);
+                y = j;        
                 
             } 
         }   
             
     }
-    printf("A melhor promoção é: leve %d e pague %d.\n", x, y);
-    
-    //printf("menor resto: %f ", aux);
+    printf("A melhor promocao eh: leve %d e pague %d.\n", x, y);
+   
             
     
     

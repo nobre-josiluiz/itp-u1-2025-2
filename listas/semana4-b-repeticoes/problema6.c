@@ -18,7 +18,7 @@ int main() {
     
 
     //Construção dos trios
-    printf("\nTodos os trios pitagóricos: \n");
+    printf("\nTodos os trios pitagoricos: \n");
     for (int i = 5; i <= 1000; i++) {
         for (int j = 1; j < i; j++)
             for (int k = 1; k < j; k++)

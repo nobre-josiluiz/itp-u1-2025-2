@@ -74,7 +74,7 @@ void adequarHorario(int hora, int minuto, int escolha) {
             printf("%02d:%02d PM\n", transformarHora(hora), minuto);
         }
     } else {
-        printf("Formato inválido!\n");
+        printf("Formato invalido!\n");
     }
 }
 
@@ -86,7 +86,7 @@ int main() {
 
     int h, m, f;
 
-    printf("Digite a hora, minuto e formato:");
+    printf("Digite a hora, minuto e formato separados por espaco:");
     scanf("%d %d %d", &h, &m, &f);  
   
     adequarHorario(h, m, f);

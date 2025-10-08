@@ -27,15 +27,15 @@ int main() {
     scanf(" %c", &condicao1); // Lê um inteiro e armazena em 'idade'
     
     if (condicao1 != 'S' && condicao1 != 'N') {
-        printf("\nInválido! Digite S ou N.");
+        printf("\nInvalido! Digite S ou N.");
         return 1;
     }
 
-    printf("Tem dor de cabeça(S/N): ");
+    printf("Tem dor de cabeca(S/N): ");
     scanf(" %c", &condicao2); // Lê um float e armazena em 'altura'
     
     if (condicao2 != 'S' && condicao2 != 'N') {
-        printf("\nInválido! Digite S ou N.");
+        printf("\nInvalido! Digite S ou N.");
         return 1;
     }
 
@@ -43,7 +43,7 @@ int main() {
     scanf(" %c", &condicao3); // Lê um caractere e armazena em 'inicial' 
     
     if (condicao3 != 'S' && condicao3 != 'N') {
-        printf("\nInválido! Digite S ou N.");
+        printf("\nInvalido! Digite S ou N.");
         return 1;
     }
 
@@ -59,19 +59,19 @@ int main() {
         printf("\nPossivel gripe.");
 
     } else if (condicao1 == 'S' && condicao2 == 'N' && condicao3 == 'N' && condicao4 == 'S') {
-        printf("\nPossível resfriado");
+        printf("\nPossivel resfriado");
 
     } else if (condicao1 == 'N' && condicao2 == 'S' && condicao3 == 'N' && condicao4 == 'N') {
-        printf("\nPossível enxaqueca");
+        printf("\nPossivel enxaqueca");
 
     } else if (condicao1 == 'S' && condicao2 == 'N' && condicao3 == 'N' && condicao4 == 'N') {
-        printf("\nConsulte um médico");
+        printf("\nConsulte um medico");
 
     } else if (condicao1 == 'N' && condicao2 == 'N' && condicao3 == 'N' && condicao4 == 'N') {
-        printf("\nVocê parece estar bem");
+        printf("\nVoce parece estar bem");
 
     } else { 
-        printf("\nConsulte um médico para avaliação");
+        printf("\nConsulte um medico para avaliacao");
     }
 
 

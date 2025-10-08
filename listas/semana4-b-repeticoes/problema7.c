@@ -18,12 +18,12 @@ int main() {
     int a, b, i, j, divisor; // índices
     
     //Dados de entrada
-    printf("Digite dois números inteiros com (a < b): ");
+    printf("Digite dois numeros inteiros com (a < b) separados por espaco: ");
     scanf(" %d %d", &a, &b);
     
     //Validação
     if(a >= b || a < 0 || b <= 0) {
-        printf("Cuidado, digite valores válidos e no formato a < b.");
+        printf("Cuidado, digite valores validos e no formato a < b.");
         return 1;
     }
     

@@ -25,10 +25,10 @@ int main() {
 
     // Avaliando o desconto progressivo
     if (valorCompra <= 0) {
-        printf("Valor inválido, digite um valor positivo!\n");
+        printf("Valor invalido, digite um valor positivo!\n");
         return 1;
     } else if (valorCompra > 0 && valorCompra < 0.01) {
-        printf("Cuidado, digite um valor com até duas casas decimais!\n");
+        printf("Cuidado, digite um valor com ate duas casas decimais!\n");
         return 1;
     } else if (valorCompra >= 0.01 && valorCompra <= 100) {
         valorDesconto = 0;

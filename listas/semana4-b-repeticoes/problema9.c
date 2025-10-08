@@ -27,13 +27,13 @@ int main() {
     int i, j, p, s; // índices
     
     //Dados de entrada
-    printf("Digite o preço do primeiro fornecedor: ");
+    printf("Digite o preco do primeiro fornecedor: ");
     scanf(" %f", &preco_fornecedor1);
     
-    printf("Digite o preço do segundo fornecedor: ");
+    printf("Digite o preco do segundo fornecedor: ");
     scanf(" %f", &preco_fornecedor2);
     
-    printf("Digite a quantia disponível: ");
+    printf("Digite a quantia disponivel: ");
     scanf(" %f", &quantia_disponivel);
     
     //Validação

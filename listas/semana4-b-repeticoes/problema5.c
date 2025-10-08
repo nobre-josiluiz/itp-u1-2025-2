@@ -20,7 +20,7 @@ int main() {
     
     //Validação
     if(num_linhas <= 0) {
-        printf("Cuidado, digite um valor válido.");
+        printf("Cuidado, digite um valor valido.");
         return 1;
     }
     

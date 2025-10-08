@@ -33,13 +33,13 @@ int main() {
     int soma_num1 = 0, soma_num2 = 0; // dois números inteiros
     
     //Inserindo os valores de entrada.
-    printf("Digite dois números inteiros distintos: ");
+    printf("Digite dois numeros inteiros distintos: ");
     scanf(" %d %d", &num1, &num2);
    
     
     // Validando valores de entrada 
     if (num1 == num2 || num1 <= 0 || num2 <= 0) {
-        printf("\nOpa! Digite dois números inteiros diferentes e/ou positivos.");
+        printf("\nOpa! Digite dois numeros inteiros diferentes e/ou positivos.");
         return 1;
     }
     
@@ -64,14 +64,13 @@ int main() {
     }
     
     //Conclusão
-    printf("\nEsses
-    números são colegas (S/N)? ");
+    printf("\nEsses numeros sao colegas (S/N)? ");
     if (abs(soma_num1 - num2) <= 2 && abs(soma_num2 - num1) <= 2) {
        printf("S"); 
     } else {
+
        printf("N");
     }
-    
-   
+       
     return 0;
 }
