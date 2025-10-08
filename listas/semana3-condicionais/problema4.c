@@ -1,5 +1,5 @@
 /*
-* Lista de exercícios - semana 3
+* Lista de exerc�cios - semana 3
 * Problema 4 - Jogo: pedra, papel, tesoura
 * Programa que simula uma partida de "pedra, papel, tesoura". O programa deve:
   # Ler a jogada do jogador 1 (P para pedra, A para papel, T para tesoura)
@@ -19,18 +19,18 @@ int main() {
   printf("Digite a jogada do jogador 1 (P para pedra, A para papel, T para tesoura): ");
   scanf(" %c", &jogador1);
 
-  // Validação dos valores de entrada do jogador 1
+  // Valida��o dos valores de entrada do jogador 1
   if (jogador1 != 'P' && jogador1 != 'A' && jogador1 != 'T') {
-    printf("\nJogada inválida para o jogador 1. Use P, A ou T.\n");
+    printf("\nJogada inv�lida para o jogador 1. Use P, A ou T.\n");
     return 1;
   }
 
-  // Validação dos valores de entrada do jogador 2
+  // Valida��o dos valores de entrada do jogador 2
   printf("Digite a jogada do jogador 2 (P para pedra, A para papel, T para tesoura): ");
   scanf(" %c", &jogador2);
   
   if (jogador2 != 'P' && jogador2 != 'A' && jogador2 != 'T') {
-    printf("\nJogada inválida para o jogador 2. Use P, A ou T.\n");
+    printf("\nJogada inv�lida para o jogador 2. Use P, A ou T.\n");
     return 1;
   }  
   
